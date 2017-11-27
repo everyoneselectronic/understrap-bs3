@@ -1,17 +1,21 @@
 UnderStrap WordPress Theme Framework
 ===
-
-Website: http://understrap.com
-
-Child Theme Project: https://github.com/holger1411/understrap-child
+Need to test everything is working ok.
 
 Changelog
 =
+            - **0.3.9.8 Nov. 27th 2017**
+                   - Updated Bootstrap to 3.3.7
+                   - Updated Owl Carousel to 2.2.1
+                   - Updated Font Awesome to 4.7.0
+                   - Changed credits
+                   - Removed SASS
+                   - Removed all unused CSS and JS files
+
             - **0.3.9 Jun. 21th 2016**
                    - Code Cleanup
                    - Fixing smaller bugs
                    - Complete credits/license infos
-
 
             - **0.3.8.1 May. 10th 2016**
                    - Removing all unused CSS and JS files
@@ -21,7 +25,6 @@ Changelog
                    - Adding footer widget area
                    - Adjust Bootstrap markup for searchform and search widget
 
-
             - **0.3.7 Jan. 8th 2016**
                    - Cleanup for submitting to WordPress.org theme repository:
                         - Fixing sticky post problem
@@ -29,7 +32,6 @@ Changelog
                         - re-activating the admin bar
                         - adding readme.txt
                         - Fixing missing translation strings in comments template
-
 
             - **0.3.6 Jan. 4th 2016**
                    - Cleanup
@@ -41,7 +43,6 @@ Changelog
                    - Adding basic WooCommerce support
                    - Cleanup for submitting to wordpress.org
                    - Removing _s SASS ... no need for basic styling. Thats Bootstrap´s job.
-
 
             - **0.3.1 AUG. 12th 2015**
                    - Adding bower dependency manager and replacing GRUNT taskrunner with GULP
@@ -57,14 +58,12 @@ Changelog
             - **0.2.8 Feb. 6th 2015**
                    - Adding Grunt and Grunt SASS task
 
-
             - **0.2.7 Jan. 26th 2015**
                    - Adding some basic theme option for the build-in slider script
 
             - **0.2.6 Dec. 28th 2014**
-                    - CLean up
-                    
-                    
+                    - Clean up
+
             - **0.2 Dec. 22th 2014**
                     - Adding Jasny Off-Canvas nav and Owl.Carousel Slider script
                     - Enqueue scipts and styled dynamically
@@ -73,45 +72,24 @@ Changelog
 
 About
 =
-Basically I like the _s WordPress Starter Theme from Automattic and the grid Framework Bootstrap. Additionally I´am a huge SASS fan. Why don´t combine all these three things into a solid WordPress Theme Framework?
-That´s what UnderStrap is (or will be...)
-
-At the moment UnderStrap is in a very early stage. But if you wan´t feel free to use it for your own WordPress theme!
+Updated Understrap BS3 theme
 
 Basic Features
 =
 - Combines the _s WordPress Starter Theme PHP/JS files and Bootstrap´s HTML/CSS/JS
-- Comes with Bootstrap (3.3.6) SASS source files and additional scss files. Nicely sorted and ready to add your own variables/customize the Bootstrap variables.
+- Comes with Bootstrap (3.3.7)
 - Uses a single and minified CSS file for all the basic stuff
-- Font Awesome Icon Font integrated (V 4.5.0): http://fortawesome.github.io/Font-Awesome/
-- Comes with extra slider script - By owl.carousel (V 2.0.0-beta.2.4): http://www.owlcarousel.owlgraphic.com/
+- Font Awesome Icon Font integrated (V 4.7.0): http://fortawesome.github.io/Font-Awesome/
+- Comes with extra slider script - By owl.carousel (V 2.2.1): http://www.owlcarousel.owlgraphic.com/
 - Simple RTL file
 - Jetpack ready
 - WooCommerce support
-- Child Theme ready (A basic starter Child Theme will be released in the future as a separate Repository)
 - Translation ready
 
 Starter Theme + HTML Framework = WordPress Theme Framework
 =
 The _s theme is a good starting point to develope a WordPress theme. But it is "just" a raw starter theme. Means it outputs all the WordPress stuff correctly but without any layout or design.
 Why don´t add a well known and supported layout framework to have a solid, clean and responsive foundation? Thats where Bootstrap comes in.
-
-Confused by all the CSS and SCSS files?
-=
-Some basics about the SCSS and CSS files comes with UnderStrap:
-- The theme itself uses the style.css in the root directory just to identify the theme inside of WordPress. The file is not loaded by the theme and did not include any styles
-- The theme.css file in /css/ subdirectory provides all styles. It is composed by five different SCSS sets and one variables file from /sass/theme.scss:
-
-                  - 1 "theme/theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
-                  - 2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
-                  - 3 "understrap/understrap"; // <--------- Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
-                  - 4 "../src/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
-
-                  // Any additional imported files //
-                  - 5 "theme/theme";  // <--------- Add your styles into this file
-
-- Don´t edit the files no. 2-4 files/filesets or you aren´t able to update it without overwriting your own work!
-- Your design goes into: /sass/theme directory. Add your styles to the theme.scss file and your variables to the _theme_variables.scss. Or add other scss files into it and @import it into theme.scss
 
 Installation
 =
@@ -120,21 +98,6 @@ Installation
 - Login to your WordPress backend 
 - Go to Appearance -> Themes
 - Activate the UnderStrap theme
-
-Developing with NPM, Bower, Gulp and SASS
-=
-- Make sure you have installed Node.js and Bower on your computer globally
-- Then open your terminal and browse to the location of your UnderStrap copy
-- Run:
-                  $ npm install
-than:
-                  $ bower install
-and finally:
-                  $ gulp copy-assets
-
-To work and compile your SASS files on the fly start:
-                  $ gulp watch
-
 
 How to use the build-in Widget Slider?
 =
