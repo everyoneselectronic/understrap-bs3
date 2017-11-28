@@ -4,7 +4,7 @@
 
     <div class="wrapper" id="wrapper-hero">
 
-        <div class="owl-carousel">
+        <div class="owl-carousel owl-theme">
 
 
             <?php dynamic_sidebar( 'hero' ); ?>
