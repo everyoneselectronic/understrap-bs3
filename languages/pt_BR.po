@@ -163,10 +163,6 @@ msgstr "Seu Coment&aacute;rio"
 msgid "Send comment."
 msgstr "Comentar"
 
-#: ../header.php:31
-msgid "Skip to content"
-msgstr "Ir para o conte&uacute;do"
-
 #. Name of the template
 msgid "Full Width Page"
 msgstr "Sem barra lateral"

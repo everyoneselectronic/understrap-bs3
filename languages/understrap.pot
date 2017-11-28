@@ -135,10 +135,6 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: ../header.php:30
-msgid "Skip to content"
-msgstr ""
-
 #: ../search.php:23
 #, php-format
 msgid "Search Results for: %s"

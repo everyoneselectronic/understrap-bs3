@@ -134,10 +134,6 @@ msgstr "Proudly powered by %s"
 msgid "Theme: %1$s by %2$s."
 msgstr "Theme: %1$s von %2$s."
 
-#: ../header.php:30
-msgid "Skip to content"
-msgstr "Zum Inhalt springen"
-
 #: ../search.php:23
 #, php-format
 msgid "Search Results for: %s"
